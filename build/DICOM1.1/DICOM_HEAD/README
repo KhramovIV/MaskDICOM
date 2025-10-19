@@ -1,0 +1,28 @@
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                        DICOM_HEAD                       |
++                                                         +
+|                        README                           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+DICOM_HEAD is a new DICOM Digital Head included by S. Guatelli (susanna@uow.edu.au) and V. Giacometti. Available since Geant4 10.4. 
+The Digital model is documented in: Giacometti, V., Guatelli, S., Bazalova-Carter, M., Rosenfeld, A.B., Schulte, R.W.,
+"Development of a high resolution voxelised head phantom for medical physics applications", (2017) Physica Medica, 33, pp. 182-188.
+
+How to use the DICOM_HEAD project in the examples/extended/medical/DICOM:
+1) set to 1 the environment variable DICOM_USE_HEAD(export DICOM_USE_HEAD=1). 
+2) export DICOM_PATH= path/to/DICOM_LIBRARY/DICOM_HEAD   
+3) The required dicom files, Data.dat, ColourMap.dat are in the directory DICOM_LIBRARY/DICOM_HEAD. 
+
+Note 1: Use the OLD version of the Metadata files (see point 4a of the README of the DICOM example)
+
+Note 2: The Conversion of Hounsfield numbers to materials (point 5) is not used. The material is associated to the voxel in the Detector Construction 
+        without using the calibration curve.This happens because the DICOM project has already been segmented and cleaned from artefacts (see publication).
+       
+The DICOM_HEAD project consists of 128 high resolution DICOM files.
+
+- ColourMap.dat defines the color of each tissue.
+- Data.dat loads the entire DICOM_HEAD project consisting of 128 slides with compression factor = 1.
+- 8 materials are defined.
+- *.dcm files are the DICOM files of the project
+
+

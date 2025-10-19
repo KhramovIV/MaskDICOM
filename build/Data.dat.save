@@ -1,0 +1,35 @@
+:COMPRESSION 2
+
+:MATE_DENS Air 0.100
+:MATE_DENS SoftTissue 1.06
+:MATE_DENS BrainTissue 1.08
+:MATE_DENS SpinalDisc 1.12
+:MATE_DENS TrabecularBone 1.40
+:MATE_DENS ToothDentin 1.70
+:MATE_DENS CorticalBone 1.90
+:MATE_DENS ToothEnamel 2.20
+:MATE_DENS G4_Fe 7.87
+:CT2D -5000 0.001205
+:CT2D -900 0.100
+:CT2D 0 1.06
+:CT2D 100 1.08
+:CT2D 200 1.12
+:CT2D 400 1.40
+:CT2D 800 1.70
+:CT2D 1200 1.90
+:CT2D 1500 2.20
+:CT2D 66000 7.87
+
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image281.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image282.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image283.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image284.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image285.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image286.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image287.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image288.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image289.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image290.dcm
+:FILE /home/vanya/MODELLING/dcmfiles/Mask/2370004/CT.2370004.Image291.dcm
+
+:FILE_OUT Mask.g4dcm

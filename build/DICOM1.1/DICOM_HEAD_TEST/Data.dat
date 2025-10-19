@@ -1,0 +1,16 @@
+4
+4
+60_dicom_125mm 
+61_dicom_125mm 
+62_dicom_125mm 
+63_dicom_125mm
+8 
+Air 0.100
+SoftTissue 1.06
+BrainTissue 1.08
+SpinalDisc 1.12
+TrabecularBone 1.40
+ToothDentin 1.70
+CorticalBone 1.90
+ToothEnamel 2.20
+

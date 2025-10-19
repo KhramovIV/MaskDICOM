@@ -1,0 +1,16 @@
+    =========================================================
+ 		      Geant4 - DICOM_HEAD data set
+     =========================================================
+
+                      Category History file
+
+                      ---------------------
+
+09.11.2017 - S. Guatelli DICOM_HEAD, 1.1.
+             Two projects: DICOM_HEAD and DICOM_HEAD_TEST
+
+28.09.2017 - S. Guatelli DICOM_HEAD, V1.0.
+             DICOM_HEAD project as published in Giacometti, V., Guatelli, S., Bazalova-Carter, M., Rosenfeld, A.B., Schulte, R.W.,
+             "Development of a high resolution voxelised head phantom for medical physics applications", (2017) Physica Medica, 33, pp. 182-188.
+
+

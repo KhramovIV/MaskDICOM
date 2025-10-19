@@ -1,0 +1,13 @@
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                        DICOM                            |
++                                                         +
+|                        README                           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+Specific DICOM models for the extended medical application DICOM.
+
+DICOM_HEAD is a new DICOM Digital Head included by S. Guatelli (susanna@uow.edu.au) and V. Giacometti. Available since Geant4 10.4. 
+The Digital model is documented in: Giacometti, V., Guatelli, S., Bazalova-Carter, M., Rosenfeld, A.B., Schulte, R.W.,
+"Development of a high resolution voxelised head phantom for medical physics applications", (2017) Physica Medica, 33, pp. 182-188.
+
+DICOM_HEAD_TEST is the DICOM project with few DICOM files extreacted from the DICOM Digital Head.This can be used for testing purposes.

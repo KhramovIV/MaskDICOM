@@ -1,0 +1,31 @@
+/run/initialize
+
+/gps/particle proton
+/gps/position 0. 0. 0. cm
+
+
+/gps/direction 0 0 1
+/gps/ene/type User
+/gps/hist/type arb
+
+
+# Определение точек гистограммы (энергия, относительная интенсивность)
+# Энергия задается в МэВ. Интенсивность - это относительная вероятность.
+# Geant4 автоматически нормализует интенсивности.
+# Формат: /gps/hist/point Энергия Интенсивность/gps/hist/point 0.0007 0.0003
+/gps/hist/point 0.1 0.5
+/gps/hist/point 0.16 1.002
+/gps/hist/point 0.23 1.5
+/gps/hist/point 0.38 1.45
+/gps/hist/point 0.52 1.09
+/gps/hist/point 0.69 0.81
+/gps/hist/point 1.21 0.4
+/gps/hist/point 2.001 0.203
+/gps/hist/point 3 0.1
+/gps/hist/point 4 0.05
+/gps/hist/point 5 0.02
+/gps/hist/point 5.75 0.003
+/gps/hist/inter Lin
+
+# Интерполяция между точками гистограммы: линейная
+/run/beamOn 1

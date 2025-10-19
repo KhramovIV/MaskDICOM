@@ -1,0 +1,10 @@
+8
+Air                      0.0     0.0	   0.0	   1.0
+SoftTissue               0.0     1.0     1.0     1.0
+BrainTissue              0.0     0.0     1.0     1.0
+SpinalDisc               1.0     0.0     0.0     1.0
+TrabecularBone           1.0     1.0     0.0     1.0
+ToothDentin              0.0     1.0     0.0     1.0
+CorticalBone             1.0     1.0	   1.0     1.0
+ToothEnamel              1.0     0.0     1.0     1.0
+material                 red     green   blue    opacity

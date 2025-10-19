@@ -1,0 +1,186 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"cmake/DownloadDICOMData.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 217,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 218,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 219,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 221,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 238,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "/opt/geant4-v11.3.2/share/Geant4/data",
+			"paths" : 
+			[
+				"build/DICOM1.1"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/DICOM",
+			"paths" : 
+			[
+				"include/DicomActionInitialization.hh",
+				"include/DicomDetectorConstruction.hh",
+				"include/DicomEventAction.hh",
+				"include/DicomHandler.hh",
+				"include/DicomIntersectVolume.hh",
+				"include/DicomNestedParamDetectorConstruction.hh",
+				"include/DicomNestedPhantomParameterisation.hh",
+				"include/DicomPartialDetectorConstruction.hh",
+				"include/DicomPhantomParameterisationColour.hh",
+				"include/DicomPhantomZSliceHeader.hh",
+				"include/DicomPhantomZSliceMerged.hh",
+				"include/DicomPrimaryGeneratorAction.hh",
+				"include/DicomRegularDetectorConstruction.hh",
+				"include/DicomRun.hh",
+				"include/DicomRunAction.hh",
+				"include/MyDetectorConstruction.hh",
+				"include/MyDetectorMessenger.hh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"DICOM"
+			],
+			"targetId" : "DICOM::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "DICOM::@6890427a1f51a3e7e1df",
+				"index" : 0
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libDICOM.so"
+			],
+			"targetId" : "DICOM-library::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "DICOM-library::@6890427a1f51a3e7e1df",
+				"index" : 1
+			},
+			"destination" : "lib",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "lib/Geant4-11.3.2",
+			"exportName" : "DICOMTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "DICOM-library::@6890427a1f51a3e7e1df",
+					"index" : 1
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/2acb06591c73bcb50e7a32d23e6a2a24/DICOMTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/Geant4-11.3.2",
+			"paths" : 
+			[
+				"build/InstallTreeFiles/DICOMConfig.cmake",
+				"build/InstallTreeFiles/DICOMConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}
