@@ -53,6 +53,7 @@
 #include "G4UImanager.hh"
 #include "Randomize.hh"
 #include "globals.hh"
+#include "G4ScoringManager.hh"
 
 #ifdef G4_DCMTK
 #  include "DicomFileMgr.hh"
@@ -71,7 +72,7 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 int main(int argc, char** argv)
-{
+{ 
   // Instantiate G4UIExecutive if interactive mode
   G4UIExecutive* ui = nullptr;
   if (argc == 1) {
@@ -130,7 +131,8 @@ int main(int argc, char** argv)
     dcmHandler = DicomHandler::Instance();
     dcmHandler->CheckFileFormat();
 #endif
-
+    // Объявляем скоринг менедже
+    G4ScoringManager* scoringManager = G4ScoringManager::GetScoringManager();
     /*
     // Initialisation of physics, geometry, primary particles ...
     char* nest = std::getenv("DICOM_NESTED_PARAM");

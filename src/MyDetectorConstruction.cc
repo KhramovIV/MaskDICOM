@@ -60,9 +60,9 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
     solid_water->AddMaterial(TiO2, 0.022);
   
     //  G4Material* detectorMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_Water");
-    water_x = 10 * CLHEP::cm;
+    water_x = 15 * CLHEP::cm;
 
-    G4Box* solidWater = new G4Box("Solid Water", water_x, 10 * CLHEP::cm, 10 * CLHEP::cm);
+    G4Box* solidWater = new G4Box("Solid Water", water_x, 15 * CLHEP::cm, 15 * CLHEP::cm);
     
     G4LogicalVolume* logicWater = new G4LogicalVolume(solidWater, solid_water, "Solid Water");
     
@@ -115,7 +115,7 @@ s
 void MyDetectorConstruction::SetDetectorPosition(G4double newPos) {
     G4double fDetectorPosition = newPos;
     if(phys_chamber) {
-    phys_chamber->SetTranslation(G4ThreeVector(water_x - newPos * cm, 0, 0));
+    phys_chamber->SetTranslation(G4ThreeVector(water_x - newPos * cm - 3.1 * CLHEP::mm, 0, 0));
     G4RunManager::GetRunManager()->GeometryHasBeenModified();
     }
     G4cout << "Detector position set to: " << fDetectorPosition << G4endl;
@@ -131,7 +131,7 @@ void MyDetectorConstruction::SetDetectorPosition(G4double newPos) {
     }
 }
 
-
+// Это не нужно, потом удалить
 void MyDetectorConstruction::SetDetectorZ(G4double z)
 {
     fDetectorZ = z;

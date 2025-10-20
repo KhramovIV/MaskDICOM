@@ -691,6 +691,12 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
  /opt/geant4-v11.3.2/include/Geant4/G4VStateDependent.hh \
  /opt/geant4-v11.3.2/include/Geant4/icomsdefs.hh \
  /opt/geant4-v11.3.2/include/Geant4/Randomize.hh \
+ /opt/geant4-v11.3.2/include/Geant4/G4ScoringManager.hh \
+ /opt/geant4-v11.3.2/include/Geant4/G4VScoringMesh.hh \
+ /opt/geant4-v11.3.2/include/Geant4/G4THitsMap.hh \
+ /opt/geant4-v11.3.2/include/Geant4/G4THitsCollection.hh \
+ /opt/geant4-v11.3.2/include/Geant4/G4StatDouble.hh \
+ /opt/geant4-v11.3.2/include/Geant4/G4VScoreWriter.hh \
  /home/vanya/MODELLING/dicomReader/include/DicomFileMgr.hh \
  /usr/include/dcmtk/dcmdata/dcfilefo.h \
  /usr/include/dcmtk/config/osconfig.h \
@@ -836,8 +842,6 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
  /opt/geant4-v11.3.2/include/Geant4/windefs.hh \
  /opt/geant4-v11.3.2/include/Geant4/G4Voxelizer.icc \
  /opt/geant4-v11.3.2/include/Geant4/G4VViewer.icc \
- /opt/geant4-v11.3.2/include/Geant4/G4THitsMap.hh \
- /opt/geant4-v11.3.2/include/Geant4/G4THitsCollection.hh \
  /opt/geant4-v11.3.2/include/Geant4/G4VSceneHandler.icc \
  /opt/geant4-v11.3.2/include/Geant4/G4SceneList.hh \
  /opt/geant4-v11.3.2/include/Geant4/G4Scene.hh \
