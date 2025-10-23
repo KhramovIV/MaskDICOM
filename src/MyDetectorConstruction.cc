@@ -62,7 +62,7 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
     //  G4Material* detectorMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_Water");
     water_x = 15 * CLHEP::cm;
 
-    G4Box* solidWater = new G4Box("Solid Water", water_x, 15 * CLHEP::cm, 15 * CLHEP::cm);
+    G4Box* solidWater = new G4Box("Solid Water", water_x, 15 * CLHEP::cm, 15     * CLHEP::cm);
     
     G4LogicalVolume* logicWater = new G4LogicalVolume(solidWater, solid_water, "Solid Water");
     
@@ -79,14 +79,14 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
 
     // Материал камеры (сталь, например)
     G4Material* steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
-
+    G4Material* air = nist->FindOrBuildMaterial("G4_AIR");
     // Создание внешнего цилиндра (стенки камеры)
     outer_chamber = new G4Tubs("OuterChamber", 0., outer_radius, chamber_length / 2., 0., 360.0 * CLHEP::deg);
     logic_outer_chamber = new G4LogicalVolume(outer_chamber, steel, "OuterChamber");
 
     // Внутренний цилиндр (внутренний электрод)
     inner_chamber = new G4Tubs("InnerChamber", 0., inner_radius, chamber_length / 2., 0., 360.0 * CLHEP::deg);
-    logic_inner_chamber = new G4LogicalVolume(inner_chamber, steel, "InnerChamber");
+    logic_inner_chamber = new G4LogicalVolume(inner_chamber, air, "InnerChamber");
 
     auto rotation_matrix = new G4RotationMatrix();
     rotation_matrix->rotateX(90*CLHEP::deg);
