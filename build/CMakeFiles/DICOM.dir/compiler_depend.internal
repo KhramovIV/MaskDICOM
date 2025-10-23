@@ -338,6 +338,7 @@ CMakeFiles/DICOM.dir/DICOM.cc.o
  /opt/geant4-v11.3.2/include/Geant4/G4SceneHandlerList.hh
  /opt/geant4-v11.3.2/include/Geant4/G4SceneList.hh
  /opt/geant4-v11.3.2/include/Geant4/G4SceneTreeItem.hh
+ /opt/geant4-v11.3.2/include/Geant4/G4ScoringManager.hh
  /opt/geant4-v11.3.2/include/Geant4/G4SigmaMinus.hh
  /opt/geant4-v11.3.2/include/Geant4/G4SigmaPlus.hh
  /opt/geant4-v11.3.2/include/Geant4/G4SigmaZero.hh
@@ -358,6 +359,7 @@ CMakeFiles/DICOM.dir/DICOM.cc.o
  /opt/geant4-v11.3.2/include/Geant4/G4Sphere.icc
  /opt/geant4-v11.3.2/include/Geant4/G4StackManager.hh
  /opt/geant4-v11.3.2/include/Geant4/G4StackedTrack.hh
+ /opt/geant4-v11.3.2/include/Geant4/G4StatDouble.hh
  /opt/geant4-v11.3.2/include/Geant4/G4Step.hh
  /opt/geant4-v11.3.2/include/Geant4/G4Step.icc
  /opt/geant4-v11.3.2/include/Geant4/G4StepPoint.hh
@@ -458,6 +460,8 @@ CMakeFiles/DICOM.dir/DICOM.cc.o
  /opt/geant4-v11.3.2/include/Geant4/G4VRML2File.hh
  /opt/geant4-v11.3.2/include/Geant4/G4VSceneHandler.hh
  /opt/geant4-v11.3.2/include/Geant4/G4VSceneHandler.icc
+ /opt/geant4-v11.3.2/include/Geant4/G4VScoreWriter.hh
+ /opt/geant4-v11.3.2/include/Geant4/G4VScoringMesh.hh
  /opt/geant4-v11.3.2/include/Geant4/G4VSolid.hh
  /opt/geant4-v11.3.2/include/Geant4/G4VSolid.icc
  /opt/geant4-v11.3.2/include/Geant4/G4VStateDependent.hh

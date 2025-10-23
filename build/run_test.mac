@@ -48,7 +48,7 @@
 #
 /detector/setPos 0.3
 /score/create/cylinderMesh det1
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 14.4 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -57,7 +57,7 @@
 
 /detector/setPos 0.4
 /score/create/cylinderMesh det2
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 14.3 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -66,7 +66,7 @@
 
 /detector/setPos 0.5
 /score/create/cylinderMesh det3
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 14.2 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -75,7 +75,7 @@
 
 /detector/setPos 0.6
 /score/create/cylinderMesh det4
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 14.1 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -84,7 +84,7 @@
 
 /detector/setPos 0.7
 /score/create/cylinderMesh det5
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 13.9 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -93,7 +93,7 @@
 
 /detector/setPos 0.8
 /score/create/cylinderMesh det6
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 13.9 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -102,7 +102,7 @@
 
 /detector/setPos 0.9
 /score/create/cylinderMesh det7
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 13.8 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -111,7 +111,7 @@
 
 /detector/setPos 1
 /score/create/cylinderMesh det8
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 13.7 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -120,7 +120,7 @@
 
 /detector/setPos 2
 /score/create/cylinderMesh det9
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 12.7 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -129,7 +129,7 @@
 
 /detector/setPos 4 
 /score/create/cylinderMesh det10
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 10.7 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -138,7 +138,7 @@
 
 /detector/setPos 6
 /score/create/cylinderMesh det11
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 8.7 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -147,7 +147,7 @@
 
 /detector/setPos 8
 /score/create/cylinderMesh det12
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 6.7 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -156,7 +156,7 @@
 
 /detector/setPos 9
 /score/create/cylinderMesh det13
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 5.7 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
@@ -165,7 +165,7 @@
 
 /detector/setPos 19
 /score/create/cylinderMesh det14
-/score/mesh/cylinderSize 5 20 mm
+/score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz -4.3 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep

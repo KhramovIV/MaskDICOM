@@ -337,6 +337,7 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
   /opt/geant4-v11.3.2/include/Geant4/G4SceneHandlerList.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4SceneList.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4SceneTreeItem.hh \
+  /opt/geant4-v11.3.2/include/Geant4/G4ScoringManager.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4SigmaMinus.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4SigmaPlus.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4SigmaZero.hh \
@@ -357,6 +358,7 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
   /opt/geant4-v11.3.2/include/Geant4/G4Sphere.icc \
   /opt/geant4-v11.3.2/include/Geant4/G4StackManager.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4StackedTrack.hh \
+  /opt/geant4-v11.3.2/include/Geant4/G4StatDouble.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4Step.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4Step.icc \
   /opt/geant4-v11.3.2/include/Geant4/G4StepPoint.hh \
@@ -457,6 +459,8 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
   /opt/geant4-v11.3.2/include/Geant4/G4VRML2File.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4VSceneHandler.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4VSceneHandler.icc \
+  /opt/geant4-v11.3.2/include/Geant4/G4VScoreWriter.hh \
+  /opt/geant4-v11.3.2/include/Geant4/G4VScoringMesh.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4VSolid.hh \
   /opt/geant4-v11.3.2/include/Geant4/G4VSolid.icc \
   /opt/geant4-v11.3.2/include/Geant4/G4VStateDependent.hh \
@@ -1470,6 +1474,12 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 
 /usr/include/asm-generic/posix_types.h:
 
+/usr/include/c++/13/iostream:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
 /opt/geant4-v11.3.2/include/Geant4/G4OmegabMinus.hh:
 
 /usr/include/c++/13/backward/auto_ptr.h:
@@ -1550,10 +1560,6 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 
 /opt/geant4-v11.3.2/include/Geant4/G4XicZero.hh:
 
-/usr/include/c++/13/iostream:
-
-/usr/include/asm-generic/errno.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /opt/geant4-v11.3.2/include/Geant4/G4NormalNavigation.hh:
@@ -1575,6 +1581,10 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 /usr/include/c++/13/ios:
 
 /opt/geant4-v11.3.2/include/Geant4/G4GraphicsSystemList.hh:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/opt/geant4-v11.3.2/include/Geant4/CLHEP/Utility/thread_local.h:
 
 /opt/geant4-v11.3.2/include/Geant4/G4GMocrenFile.hh:
 
@@ -2022,10 +2032,6 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 
 /opt/geant4-v11.3.2/include/Geant4/QGSP_BIC.hh:
 
-/opt/geant4-v11.3.2/include/Geant4/CLHEP/Utility/thread_local.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
 /opt/geant4-v11.3.2/include/Geant4/G4AffineTransform.hh:
 
 /opt/geant4-v11.3.2/include/Geant4/CLHEP/Vector/RotationX.icc:
@@ -2055,10 +2061,6 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 /opt/geant4-v11.3.2/include/Geant4/CLHEP/Random/RandBit.h:
 
 /opt/geant4-v11.3.2/include/Geant4/G4GlobalConfig.hh:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/opt/geant4-v11.3.2/include/Geant4/CLHEP/Vector/LorentzVector.icc:
 
 /opt/geant4-v11.3.2/include/Geant4/CLHEP/Random/RanshiEngine.h:
 
@@ -2282,6 +2284,8 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 
 /opt/geant4-v11.3.2/include/Geant4/G4ParticleDefinition.icc:
 
+/opt/geant4-v11.3.2/include/Geant4/G4VScoreWriter.hh:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
@@ -2468,6 +2472,12 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 
 /opt/geant4-v11.3.2/include/Geant4/G4Region.icc:
 
+/usr/include/c++/13/bits/exception_defines.h:
+
+/opt/geant4-v11.3.2/include/Geant4/CLHEP/Vector/LorentzVector.icc:
+
+/opt/geant4-v11.3.2/include/Geant4/G4ScoringManager.hh:
+
 /usr/include/c++/13/bits/regex_scanner.h:
 
 /opt/geant4-v11.3.2/include/Geant4/G4OpenGLQt.hh:
@@ -2568,6 +2578,8 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 
 /opt/geant4-v11.3.2/include/Geant4/G4Sphere.hh:
 
+/opt/geant4-v11.3.2/include/Geant4/G4VScoringMesh.hh:
+
 /opt/geant4-v11.3.2/include/Geant4/G4Sphere.icc:
 
 /usr/include/c++/13/bits/deque.tcc:
@@ -2577,6 +2589,12 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 /opt/geant4-v11.3.2/include/Geant4/G4NavigationHistoryPool.hh:
 
 /opt/geant4-v11.3.2/include/Geant4/G4VParticleChange.hh:
+
+/opt/geant4-v11.3.2/include/Geant4/G4StatDouble.hh:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/opt/geant4-v11.3.2/include/Geant4/G4TaskRunManager.hh:
 
 /opt/geant4-v11.3.2/include/Geant4/G4Step.hh:
 
@@ -2633,10 +2651,6 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 /usr/include/c++/13/bits/regex_compiler.h:
 
 /opt/geant4-v11.3.2/include/Geant4/evtdefs.hh:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/opt/geant4-v11.3.2/include/Geant4/G4TaskRunManager.hh:
 
 /opt/geant4-v11.3.2/include/Geant4/G4TauMinus.hh:
 
@@ -2883,5 +2897,3 @@ CMakeFiles/DICOM.dir/DICOM.cc.o: /home/vanya/MODELLING/DICOM.cc \
 /opt/geant4-v11.3.2/include/Geant4/tls.hh:
 
 /opt/geant4-v11.3.2/include/Geant4/trkdefs.hh:
-
-/usr/include/asm-generic/bitsperlong.h:
