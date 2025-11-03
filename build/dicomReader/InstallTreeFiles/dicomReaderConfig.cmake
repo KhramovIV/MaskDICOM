@@ -1,4 +1,4 @@
-set(FOO_VERSION 11.3.2)
+set(FOO_VERSION 11.1.2)
 
 
 ####### Expanded from @PACKAGE_INIT@ by configure_package_config_file() #######

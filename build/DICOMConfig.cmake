@@ -1,4 +1,4 @@
-set(DICOM_VERSION 11.3.2)
+set(DICOM_VERSION 11.1.2)
 
 macro(set_and_check _var _file)
     set(${_var} "${_file}")
@@ -18,7 +18,7 @@ macro(check_required_components _NAME)
 endmacro()
 
 
-set_and_check(DICOM_INCLUDE_DIR "/home/vanya/MODELLING/include")
+set_and_check(DICOM_INCLUDE_DIR "/home/fuirm/Mask/MaskDICOM/include")
 
 check_required_components(DICOM)
 
@@ -33,7 +33,7 @@ set(DICOM_USE_HEAD ON)
 if(DICOM_USE_DCMTK)
     set(dicomReader_DIR ${CMAKE_CURRENT_LIST_DIR}
         CACHE PATH "Path to dicomReader configuration")
-    find_package(dicomReader 11.3.2 EXACT REQUIRED)
+    find_package(dicomReader 11.1.2 EXACT REQUIRED)
     list(APPEND DICOM_INCLUDE_DIRS ${dicomReader_INCLUDE_DIRS})
     list(APPEND DICOM_LIBRARIES ${dicomReader_LIBRARIES})
     add_definitions(-DG4_DCMTK)

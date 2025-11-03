@@ -26,9 +26,9 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
 {   
     auto nist = G4NistManager::Instance();
     //----- Build world
-    G4double worldXDimension = 1. * m;
-    G4double worldYDimension = 1. * m;
-    G4double worldZDimension = 1. * m;
+    G4double worldXDimension = 2. * m;
+    G4double worldYDimension = 2. * m;
+    G4double worldZDimension = 2. * m;
     auto fAir = nist->FindOrBuildMaterial("G4_AIR");
 
     G4Box *fWorld_solid = new G4Box("WorldSolid", worldXDimension, worldYDimension, worldZDimension);
@@ -82,11 +82,11 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct()
     G4Material* air = nist->FindOrBuildMaterial("G4_AIR");
     // Создание внешнего цилиндра (стенки камеры)
     outer_chamber = new G4Tubs("OuterChamber", 0., outer_radius, chamber_length / 2., 0., 360.0 * CLHEP::deg);
-    logic_outer_chamber = new G4LogicalVolume(outer_chamber, steel, "OuterChamber");
+    logic_outer_chamber = new G4LogicalVolume(outer_chamber, air, "OuterChamber");
 
     // Внутренний цилиндр (внутренний электрод)
     inner_chamber = new G4Tubs("InnerChamber", 0., inner_radius, chamber_length / 2., 0., 360.0 * CLHEP::deg);
-    logic_inner_chamber = new G4LogicalVolume(inner_chamber, air, "InnerChamber");
+    logic_inner_chamber = new G4LogicalVolume(inner_chamber, steel, "InnerChamber");
 
     auto rotation_matrix = new G4RotationMatrix();
     rotation_matrix->rotateX(90*CLHEP::deg);
@@ -115,7 +115,7 @@ s
 void MyDetectorConstruction::SetDetectorPosition(G4double newPos) {
     G4double fDetectorPosition = newPos;
     if(phys_chamber) {
-    phys_chamber->SetTranslation(G4ThreeVector(water_x - newPos * cm - 3.1 * CLHEP::mm, 0, 0));
+    phys_chamber->SetTranslation(G4ThreeVector(water_x - newPos * cm - 3.1 * CLHEP::mm - 0.50 * CLHEP::cm, 0, 0));
     G4RunManager::GetRunManager()->GeometryHasBeenModified();
     }
     G4cout << "Detector position set to: " << fDetectorPosition << G4endl;

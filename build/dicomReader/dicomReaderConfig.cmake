@@ -1,4 +1,4 @@
-set(FOO_VERSION 11.3.2)
+set(FOO_VERSION 11.1.2)
 
 macro(set_and_check _var _file)
     set(${_var} "${_file}")
@@ -18,7 +18,7 @@ macro(check_required_components _NAME)
 endmacro()
 
 
-set_and_check(dicomReader_INCLUDE_DIR "/home/vanya/MODELLING/dicomReader/include")
+set_and_check(dicomReader_INCLUDE_DIR "/home/fuirm/Mask/MaskDICOM/dicomReader/include")
 
 check_required_components(dicomReader)
 

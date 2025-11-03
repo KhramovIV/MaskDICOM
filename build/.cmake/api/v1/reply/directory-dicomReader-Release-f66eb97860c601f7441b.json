@@ -1,0 +1,120 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"dicomReader/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/dicomReader",
+			"paths" : 
+			[
+				"dicomReader/include/DicomBeam.hh",
+				"dicomReader/include/DicomBeamBlock.hh",
+				"dicomReader/include/DicomBeamCompensator.hh",
+				"dicomReader/include/DicomBeamControlPoint.hh",
+				"dicomReader/include/DicomBeamDevice.hh",
+				"dicomReader/include/DicomBeamDevicePos.hh",
+				"dicomReader/include/DicomBeamDeviceRef.hh",
+				"dicomReader/include/DicomBeamWedge.hh",
+				"dicomReader/include/DicomFileCT.hh",
+				"dicomReader/include/DicomFileCT_NOdcmrt.hh",
+				"dicomReader/include/DicomFileMgr.hh",
+				"dicomReader/include/DicomFilePET.hh",
+				"dicomReader/include/DicomFilePlan.hh",
+				"dicomReader/include/DicomFileStructure.hh",
+				"dicomReader/include/DicomROI.hh",
+				"dicomReader/include/DicomROIContour.hh",
+				"dicomReader/include/DicomVBeamDevice.hh",
+				"dicomReader/include/DicomVFile.hh",
+				"dicomReader/include/DicomVFileImage.hh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"dicomReader/libdicomReader.so"
+			],
+			"targetId" : "dicomReader::@dc2e405450375eb48424",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/Geant4-11.1.2",
+			"exportName" : "dicomReaderTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "dicomReader::@dc2e405450375eb48424",
+					"index" : 2
+				}
+			],
+			"paths" : 
+			[
+				"dicomReader/CMakeFiles/Export/lib/Geant4-11.1.2/dicomReaderTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/Geant4-11.1.2",
+			"paths" : 
+			[
+				"build/dicomReader/InstallTreeFiles/dicomReaderConfig.cmake",
+				"build/dicomReader/InstallTreeFiles/dicomReaderConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "dicomReader",
+		"source" : "dicomReader"
+	}
+}
