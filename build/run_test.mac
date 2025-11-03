@@ -187,41 +187,41 @@
 /score/dumpQuantityToFile det14 eDep out130.csv
 
 /detector/setPos 15
-/score/create/cylinderMesh det14
+/score/create/cylinderMesh det15
 /score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz -0.8 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
 /run/beamOn 1000000
-/score/dumpQuantityToFile det14 eDep out150.csv
+/score/dumpQuantityToFile det15 eDep out150.csv
 
 /detector/setPos 17
-/score/create/cylinderMesh det14
+/score/create/cylinderMesh det16
 /score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz -2.8 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
 /run/beamOn 1000000
-/score/dumpQuantityToFile det14 eDep out170.csv
+/score/dumpQuantityToFile det16 eDep out170.csv
 
 /detector/setPos 10
-/score/create/cylinderMesh det14
+/score/create/cylinderMesh det17
 /score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz 4.2 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
 /run/beamOn 1000000
-/score/dumpQuantityToFile det14 eDep out170.csv
+/score/dumpQuantityToFile det17 eDep out100.csv
 
 /detector/setPos 20
-/score/create/cylinderMesh det14
+/score/create/cylinderMesh det18
 /score/mesh/cylinderSize 3.1 20 mm
 /score/mesh/translate/xyz -5.8 0 0 cm
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
 /run/beamOn 1000000
-/score/dumpQuantityToFile det14 eDep out170.csv
+/score/dumpQuantityToFile det18 eDep out200.csv

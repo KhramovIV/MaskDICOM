@@ -1,0 +1,77 @@
+# S. Chauvie
+#
+# Macro file recommended for the use with DICOM example and built-in physic list.
+# This macro uses the physics list already contained in the Geant4 distribution
+# 
+
+#########################
+# Set of the verboses 
+#
+/control/verbose 1
+/tracking/verbose 0
+/run/verbose 1
+/event/verbose 0
+
+
+##########################
+# Random
+#
+
+/random/setDirectoryName .
+/random/setSavingFlag 1
+#/random/resetEngineFrom currentEvent.rndm1
+
+
+##########################
+# Initialisation procedure
+#
+#/geometry/textInput/verbose 3
+/run/printProgress 1000000
+
+# Задаём частицу и другие параметры
+/gps/particle gamma
+/gps/direction -1 0 0
+/gps/pos/centre 105 0 0 
+#/dicom/intersectWithUserVolume 0. 0. 0. 45.*deg 0. 0. TUBE 0. 150. 100.
+/run/initialize
+#
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+# 
+# gamma 6 MeV to the direction (0.,0.,1.)
+#
+/gps/ene/type Arb
+/gps/hist/file ./spectre.txt
+/gps/hist/inter Lin
+#
+/detector/setPos 17
+/score/create/cylinderMesh det16
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -2.8 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 1000000
+/score/dumpQuantityToFile det16 eDep out170.csv
+
+/detector/setPos 10
+/score/create/cylinderMesh det17
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz 4.2 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 1000000
+/score/dumpQuantityToFile det17 eDep out100.csv
+
+/detector/setPos 20
+/score/create/cylinderMesh det18
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -5.8 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 1000000
+/score/dumpQuantityToFile det18 eDep out200.csv
