@@ -20,7 +20,7 @@
 #/geometry/textInput/verbose 3
 /run/printProgress 1000000
 
-# Задаём частицу и другие параметры
+# Р—Р°РґР°С‘Рј С‡Р°СЃС‚РёС†Сѓ Рё РґСЂСѓРіРёРµ РїР°СЂР°РјРµС‚СЂС‹
 /gps/particle gamma
 /gps/direction -1 0 0
 /gps/pos/centre 105 0 0 
@@ -40,7 +40,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out0.csv
 
 /detector/setPos 0.1
@@ -50,7 +50,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out1.csv
 
 /detector/setPos 0.2
@@ -60,7 +60,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out2.csv
 
 /detector/setPos 0.3
@@ -70,7 +70,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out3.csv
 
 /detector/setPos 0.4
@@ -80,7 +80,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out4.csv
 
 /detector/setPos 0.5
@@ -90,7 +90,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out5.csv
 
 /detector/setPos 0.6
@@ -100,7 +100,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out6.csv
 
 /detector/setPos 0.7
@@ -110,7 +110,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out7.csv
 
 /detector/setPos 0.8
@@ -120,7 +120,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out8.csv
 
 /detector/setPos 0.9
@@ -130,7 +130,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out9.csv
 
 /detector/setPos 1.0
@@ -140,7 +140,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out10.csv
 
 /detector/setPos 3.0
@@ -150,7 +150,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out30.csv
 
 /detector/setPos 5.0
@@ -160,7 +160,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out50.csv
 
 /detector/setPos 6.0
@@ -170,7 +170,7 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out60.csv
 
 /detector/setPos 7.0
@@ -180,6 +180,6 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 100000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile det1 eDep out70.csv
 

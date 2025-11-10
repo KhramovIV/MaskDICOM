@@ -1,5 +1,5 @@
 depths = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 50, 60, 70, 80, 90, 100, 120, 130, 150, 170, 180, 190, 200]
-NUMBER_OF_RUNS = 100000000
+NUMBER_OF_RUNS = 10000000
 
 with open("run_generated1.mac", mode='w') as file:
     file.write(
