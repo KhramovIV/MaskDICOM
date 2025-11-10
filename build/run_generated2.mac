@@ -1,0 +1,135 @@
+
+/control/verbose 1
+/tracking/verbose 0
+/run/verbose 1
+/event/verbose 0
+
+
+##########################
+# Random
+#
+
+/random/setDirectoryName .
+/random/setSavingFlag 1
+#/random/resetEngineFrom currentEvent.rndm1
+
+
+##########################
+# Initialisation procedure
+#
+#/geometry/textInput/verbose 3
+/run/printProgress 1000000
+
+# Задаём частицу и другие параметры
+/gps/particle gamma
+/gps/direction -1 0 0
+/gps/pos/centre 105 0 0 
+#/dicom/intersectWithUserVolume 0. 0. 0. 45.*deg 0. 0. TUBE 0. 150. 100.
+/run/initialize
+#
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+
+
+/detector/setPos 8.0
+/score/create/cylinderMesh det80
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz 6.380000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out80.csv
+
+/detector/setPos 9.0
+/score/create/cylinderMesh det90
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz 5.380000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out90.csv
+
+/detector/setPos 10.0
+/score/create/cylinderMesh det100
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz 4.380000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out100.csv
+
+/detector/setPos 12.0
+/score/create/cylinderMesh det120
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz 2.380000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out120.csv
+
+/detector/setPos 13.0
+/score/create/cylinderMesh det130
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz 1.380000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out130.csv
+
+/detector/setPos 15.0
+/score/create/cylinderMesh det150
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -0.620000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out150.csv
+
+/detector/setPos 17.0
+/score/create/cylinderMesh det170
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -2.620000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out170.csv
+
+/detector/setPos 18.0
+/score/create/cylinderMesh det180
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -3.620000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out180.csv
+
+/detector/setPos 19.0
+/score/create/cylinderMesh det190
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -4.620000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out190.csv
+
+/detector/setPos 20.0
+/score/create/cylinderMesh det200
+/score/mesh/cylinderSize 3.1 20 mm
+/score/mesh/translate/xyz -5.620000 0 0 cm
+/score/mesh/nBin 1 1 1
+/score/quantity/energyDeposit eDep
+/score/close
+/run/beamOn 100000000
+/score/dumpQuantityToFile det1 eDep out200.csv
+

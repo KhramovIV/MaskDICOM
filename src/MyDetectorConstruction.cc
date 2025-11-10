@@ -115,7 +115,7 @@ s
 void MyDetectorConstruction::SetDetectorPosition(G4double newPos) {
     G4double fDetectorPosition = newPos;
     if(phys_chamber) {
-    phys_chamber->SetTranslation(G4ThreeVector(water_x - newPos * cm - 3.1 * CLHEP::mm - 0.50 * CLHEP::cm, 0, 0));
+    phys_chamber->SetTranslation(G4ThreeVector(water_x - newPos * cm - 6.2 * CLHEP::mm - 0.3 * CLHEP::cm, 0, 0));
     G4RunManager::GetRunManager()->GeometryHasBeenModified();
     }
     G4cout << "Detector position set to: " << fDetectorPosition << G4endl;
