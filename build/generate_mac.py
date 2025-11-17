@@ -1,5 +1,5 @@
 depths = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 50, 60, 70, 80, 90, 100, 120, 130, 150, 170, 180, 190, 200]
-NUMBER_OF_RUNS = 10000000
+NUMBER_OF_RUNS = 1000000
 
 with open("run_generated1.mac", mode='w') as file:
     file.write(
@@ -47,7 +47,7 @@ with open("run_generated1.mac", mode='w') as file:
         file.write(f"/score/quantity/energyDeposit eDep\n")
         file.write(f"/score/close\n")
         file.write(f"/run/beamOn {NUMBER_OF_RUNS}\n")
-        file.write(f"/score/dumpQuantityToFile det1 eDep out{depth}.csv")
+        file.write(f"/score/dumpQuantityToFile det{depth} eDep out{depth}.csv")
         file.write(f"\n\n")
 
 
@@ -97,5 +97,5 @@ with open("run_generated2.mac", mode='w') as file:
         file.write(f"/score/quantity/energyDeposit eDep\n")
         file.write(f"/score/close\n")
         file.write(f"/run/beamOn {NUMBER_OF_RUNS}\n")
-        file.write(f"/score/dumpQuantityToFile det1 eDep out{depth}.csv")
+        file.write(f"/score/dumpQuantityToFile det[depth] eDep out{depth}.csv")
         file.write(f"\n\n")
