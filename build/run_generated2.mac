@@ -40,8 +40,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out80.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det80 eDep out80.csv
 
 /detector/setPos 9.0
 /score/create/cylinderMesh det90
@@ -50,8 +50,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out90.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det90 eDep out90.csv
 
 /detector/setPos 10.0
 /score/create/cylinderMesh det100
@@ -60,8 +60,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out100.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det100 eDep out100.csv
 
 /detector/setPos 12.0
 /score/create/cylinderMesh det120
@@ -70,8 +70,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out120.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det120 eDep out120.csv
 
 /detector/setPos 13.0
 /score/create/cylinderMesh det130
@@ -80,8 +80,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out130.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det130 eDep out130.csv
 
 /detector/setPos 15.0
 /score/create/cylinderMesh det150
@@ -90,8 +90,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out150.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det150 eDep out150.csv
 
 /detector/setPos 17.0
 /score/create/cylinderMesh det170
@@ -100,8 +100,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out170.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det170 eDep out170.csv
 
 /detector/setPos 18.0
 /score/create/cylinderMesh det180
@@ -110,8 +110,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out180.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det180 eDep out180.csv
 
 /detector/setPos 19.0
 /score/create/cylinderMesh det190
@@ -120,8 +120,8 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out190.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det190 eDep out190.csv
 
 /detector/setPos 20.0
 /score/create/cylinderMesh det200
@@ -130,6 +130,6 @@
 /score/mesh/nBin 1 1 1
 /score/quantity/energyDeposit eDep
 /score/close
-/run/beamOn 1000000
-/score/dumpQuantityToFile det[depth] eDep out200.csv
+/run/beamOn 5000000
+/score/dumpQuantityToFile det200 eDep out200.csv
 

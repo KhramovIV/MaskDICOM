@@ -1,4 +1,4 @@
-# mesh name: det150
+# mesh name: det90
 # primitive scorer name: eDep
 # iZ, iPHI, iR, total(value) [MeV], total(val^2), entry
-0,0,0,33088.41882737944,17690.14219507768,88726
+0,0,0,51182.35231562678,27370.35412362441,136555
