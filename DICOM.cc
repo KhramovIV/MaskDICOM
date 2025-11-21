@@ -45,7 +45,6 @@
 #include "DicomNestedParamDetectorConstruction.hh"
 #include "DicomPartialDetectorConstruction.hh"
 #include "DicomRegularDetectorConstruction.hh"
-#include "MyDetectorConstruction.hh"
 
 #include "G4GenericPhysicsList.hh"
 #include "G4RunManagerFactory.hh"
@@ -53,7 +52,6 @@
 #include "G4UImanager.hh"
 #include "Randomize.hh"
 #include "globals.hh"
-#include "G4ScoringManager.hh"
 
 #ifdef G4_DCMTK
 #  include "DicomFileMgr.hh"
@@ -72,7 +70,7 @@
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 int main(int argc, char** argv)
-{ 
+{
   // Instantiate G4UIExecutive if interactive mode
   G4UIExecutive* ui = nullptr;
   if (argc == 1) {
@@ -109,10 +107,7 @@ int main(int argc, char** argv)
   auto* runManager = G4RunManagerFactory::CreateRunManager();
   runManager->SetNumberOfThreads(nthreads);
 
-  //DicomDetectorConstruction* theGeometry = 0;
-
-  
-  //auto theGeometry = new MyDetectorConstruction();
+  DicomDetectorConstruction* theGeometry = 0;
 
 #ifdef G4_DCMTK
   DicomFileMgr* theFileMgr = 0;
@@ -131,9 +126,7 @@ int main(int argc, char** argv)
     dcmHandler = DicomHandler::Instance();
     dcmHandler->CheckFileFormat();
 #endif
-    // Объявляем скоринг менедже
-    G4ScoringManager* scoringManager = G4ScoringManager::GetScoringManager();
-    /*
+
     // Initialisation of physics, geometry, primary particles ...
     char* nest = std::getenv("DICOM_NESTED_PARAM");
     if (nest && G4String(nest) == "1") {
@@ -146,9 +139,7 @@ int main(int argc, char** argv)
   else {
     theGeometry = new DicomPartialDetectorConstruction();
   }
-    */
-  }
-  runManager->SetUserInitialization(new MyDetectorConstruction());
+  runManager->SetUserInitialization(theGeometry);
 
   //    std::vector<G4String>* MyConstr = new std::vector<G4String>;
   //    MyConstr->push_back("G4EmStandardPhysics");

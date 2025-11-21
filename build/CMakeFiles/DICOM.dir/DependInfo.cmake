@@ -8,13 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fuirm/Mask/MaskDICOM/DICOM.cc" "CMakeFiles/DICOM.dir/DICOM.cc.o" "gcc" "CMakeFiles/DICOM.dir/DICOM.cc.o.d"
+  "/home/vanya/MODELLING/DICOM.cc" "CMakeFiles/DICOM.dir/DICOM.cc.o" "gcc" "CMakeFiles/DICOM.dir/DICOM.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/fuirm/Mask/MaskDICOM/build/CMakeFiles/DICOM-library.dir/DependInfo.cmake"
-  "/home/fuirm/Mask/MaskDICOM/build/dicomReader/CMakeFiles/dicomReader.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

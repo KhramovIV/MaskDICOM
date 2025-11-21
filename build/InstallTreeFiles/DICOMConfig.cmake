@@ -1,4 +1,4 @@
-set(DICOM_VERSION 11.1.2)
+set(DICOM_VERSION 11.3.2)
 
 
 ####### Expanded from @PACKAGE_INIT@ by configure_package_config_file() #######
@@ -35,13 +35,13 @@ include(${CMAKE_CURRENT_LIST_DIR}/DICOMTargets.cmake)
 set(DICOM_INCLUDE_DIRS ${DICOM_INCLUDE_DIR})
 set(DICOM_LIBRARIES DICOM-library)
 
-set(DICOM_USE_DCMTK ON)
-set(DICOM_USE_HEAD ON)
+set(DICOM_USE_DCMTK OFF)
+set(DICOM_USE_HEAD OFF)
 
 if(DICOM_USE_DCMTK)
     set(dicomReader_DIR ${CMAKE_CURRENT_LIST_DIR}
         CACHE PATH "Path to dicomReader configuration")
-    find_package(dicomReader 11.1.2 EXACT REQUIRED)
+    find_package(dicomReader 11.3.2 EXACT REQUIRED)
     list(APPEND DICOM_INCLUDE_DIRS ${dicomReader_INCLUDE_DIRS})
     list(APPEND DICOM_LIBRARIES ${dicomReader_LIBRARIES})
     add_definitions(-DG4_DCMTK)
