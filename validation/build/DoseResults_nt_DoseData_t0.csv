@@ -1,0 +1,6 @@
+#class tools::wcsv::ntuple
+#title Validation for dosimetry
+#separator 44
+#vector_separator 59
+#column double Thickness
+#column double Dose

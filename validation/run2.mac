@@ -1,0 +1,114 @@
+
+# Macro file for example B1
+# 
+# To be run preferably in batch, without graphics:
+# % exampleB1 run2.mac
+#
+/run/numberOfThreads 10
+/run/initialize
+/run/printProgress 500000
+#
+/control/verbose 2
+/run/verbose 2
+
+# Форма 
+/gps/source/type Plane
+/gps/shape Square
+/gps/halfx 2.5 cm   # 5 см / 2
+/gps/halfy 2.5 cm   # 5 см / 2               
+
+# Задаём частицу
+/gps/particle gamma
+/gps/direction 0 0 -1
+/gps/ang/type beam
+/gps/pos/centre 0 0 90 cm
+/gps/pos/type Volume
+/gps/pos/rot1 1 0 0
+/gps/pos/rot2 0 1 0
+               
+# Спектр частицы
+/gps/ene/type Arb
+/gps/hist/file ./spectre.txt
+/gps/hist/inter Lin
+            
+
+
+/geom/z 1
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 2
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 3
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 4
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 5
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 10
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 20
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 30
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 40
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 50
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 60
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 70
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 80
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 90
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 100
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 120
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 140
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 160
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 180
+/run/initialize
+/run/beamOn 10000000
+
+/geom/z 200
+/run/initialize
+/run/beamOn 10000000

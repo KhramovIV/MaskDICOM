@@ -107,7 +107,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fPIC"
+					"fragment" : "-g -fPIC"
 				},
 				{
 					"backtrace" : 4,
@@ -162,10 +162,6 @@
 				{
 					"backtrace" : 4,
 					"define" : "QT_GUI_LIB"
-				},
-				{
-					"backtrace" : 4,
-					"define" : "QT_NO_DEBUG"
 				},
 				{
 					"backtrace" : 4,

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-75d9a912ea91f466aabe.json",
+					"jsonFile" : "directory-.-Debug-75d9a912ea91f466aabe.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -21,7 +21,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -42,14 +42,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "DICOM::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DICOM-da60a551f1410a654bc6.json",
+					"jsonFile" : "target-DICOM-Debug-cdc1e6faac1263785427.json",
 					"name" : "DICOM",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "DICOM-library::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DICOM-library-57c4819cbcaaa0e94dab.json",
+					"jsonFile" : "target-DICOM-library-Debug-f9cea1f86cd345937ce0.json",
 					"name" : "DICOM-library",
 					"projectIndex" : 0
 				}

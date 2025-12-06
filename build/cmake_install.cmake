@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -85,7 +85,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/vanya/MODELLING/build/CMakeFiles/DICOM.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/vanya/MODELLING/build/CMakeFiles/DICOM.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -112,7 +112,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/vanya/MODELLING/build/CMakeFiles/DICOM-library.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/vanya/MODELLING/build/CMakeFiles/DICOM-library.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -133,8 +133,8 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     unset(_cmake_export_file_changed)
   endif()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/Geant4-11.3.2" TYPE FILE FILES "/home/vanya/MODELLING/build/CMakeFiles/Export/2acb06591c73bcb50e7a32d23e6a2a24/DICOMTargets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/Geant4-11.3.2" TYPE FILE FILES "/home/vanya/MODELLING/build/CMakeFiles/Export/2acb06591c73bcb50e7a32d23e6a2a24/DICOMTargets-noconfig.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/Geant4-11.3.2" TYPE FILE FILES "/home/vanya/MODELLING/build/CMakeFiles/Export/2acb06591c73bcb50e7a32d23e6a2a24/DICOMTargets-debug.cmake")
   endif()
 endif()
 
