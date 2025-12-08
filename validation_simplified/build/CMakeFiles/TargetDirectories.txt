@@ -1,0 +1,3 @@
+/home/vanya/MODELLING/validation_simplified/build/CMakeFiles/exampleB1.dir
+/home/vanya/MODELLING/validation_simplified/build/CMakeFiles/edit_cache.dir
+/home/vanya/MODELLING/validation_simplified/build/CMakeFiles/rebuild_cache.dir

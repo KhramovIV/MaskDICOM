@@ -1,9 +1,4 @@
-z = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200]
-NUMBER_OF_RUNS = 50000000
 
-
-with open('run2.mac', 'w') as file:
-    file.write("""
 # Macro file for example B1
 # 
 # To be run preferably in batch, without graphics:
@@ -11,7 +6,7 @@ with open('run2.mac', 'w') as file:
 #
 /run/numberOfThreads 10
 /run/initialize
-/run/printProgress 500000
+/run/printProgress 1000000
 #
 /control/verbose 2
 /run/verbose 2
@@ -35,13 +30,10 @@ with open('run2.mac', 'w') as file:
 /gps/hist/inter Lin
             
 
-""")
-    for depth in z:
-        file.write(f"""
-/geom/z {depth}
-/run/initialize
-/run/beamOn {NUMBER_OF_RUNS}
-/geom/z {depth+0.1}
-/run/initialize
-/run/beamOn 1
-""")
+/score/create/boxMesh boxMesh_1
+/score/mesh/boxSize 20. 20. 100. mm
+/score/mesh/nBin 1 1 30
+/score/quantity/energyDeposit eDep
+/score/close 
+/run/beamOn 1000000
+/score/dumpQuantityToFile boxMesh_1 eDep energyDeposit.csv
