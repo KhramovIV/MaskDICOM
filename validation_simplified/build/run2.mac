@@ -22,7 +22,7 @@
 # Задаём частицу
 /gps/particle gamma
 /gps/direction 0 0 -1
-/gps/pos/centre 0 0 90 cm
+/gps/pos/centre 0 0 105 cm
                
 # Спектр частицы
 /gps/ene/type Arb
@@ -31,9 +31,9 @@
             
 
 /score/create/boxMesh boxMesh_1
-/score/mesh/boxSize 20. 20. 100. mm
-/score/mesh/nBin 1 1 30
+/score/mesh/boxSize 40. 40. 150. mm
+/score/mesh/nBin 1 1 50
 /score/quantity/energyDeposit eDep
 /score/close 
-/run/beamOn 1000000
+/run/beamOn 10000000
 /score/dumpQuantityToFile boxMesh_1 eDep energyDeposit.csv

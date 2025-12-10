@@ -55,7 +55,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4LogicalVolume* ConstructPhantom();
     G4LogicalVolume* ConstructSolidWaterCube(G4double wide);
 
-    void CreateSolidWaterMaterial();
+    void CreateMaterials();
     G4double GetWallZ() const { return z; }
     G4double GetMass() const;
 
@@ -67,6 +67,7 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4double z;
     G4GenericMessenger* messenger;
     G4Material* solid_water;
+    G4Material* air;
     G4LogicalVolume* logicCavity;
 };
 

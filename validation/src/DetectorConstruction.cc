@@ -48,6 +48,7 @@ namespace B1
 
 DetectorConstruction::DetectorConstruction(): z(100)
 {
+  //this->CreateMaterials();
   messenger = new G4GenericMessenger(this, "/geom/", "Geometry control");
   messenger->DeclareMethodWithUnit("z", "mm", &DetectorConstruction::SetZ,  "Wide of solid water skin [mm]");
 }
@@ -68,8 +69,33 @@ void DetectorConstruction::SetZ(G4double val)
     ui->ApplyCommand("/vis/geometry/rebuild");
 }
 
-void DetectorConstruction::CreateSolidWaterMaterial()
-{
+void DetectorConstruction::CreateMaterials()
+{ 
+  if (!G4Material::GetMaterial("Custom_Air"))
+  {
+    // Воздух под новые условия
+    G4double T_new = 296.65 * CLHEP::kelvin;   
+    G4double P_new = 0.9984702689 * CLHEP::atmosphere; 
+
+    G4double T_std = 293.15 * kelvin;
+    G4double P_std = 1 * CLHEP::atmosphere; 
+
+    G4NistManager* nistMan = G4NistManager::Instance();
+    G4Material* air_nist = nistMan->FindOrBuildMaterial("G4_AIR");
+    G4double rho_std = air_nist->GetDensity(); 
+
+    G4double rho_new = rho_std * (P_new / P_std) * (T_std / T_new);
+
+    this->air = new G4Material(
+        "Custom_Air", 
+        rho_new,             
+        air_nist,            
+        kStateGas,           
+        T_new,
+        P_new
+        );
+  }
+
   //  Твёрдая вода
   if (!G4Material::GetMaterial("SP34"))
   {
@@ -95,7 +121,7 @@ void DetectorConstruction::CreateSolidWaterMaterial()
 // Деллаем Ионизационную камеру
 G4LogicalVolume* DetectorConstruction::ConstructChamber()
 {
-  G4Material* air = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
+  //G4Material* air = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
   G4Material* graphite = G4NistManager::Instance()->FindOrBuildMaterial("G4_GRAPHITE");
   G4Material* aluminium = G4NistManager::Instance()->FindOrBuildMaterial("G4_Al");
 
@@ -111,7 +137,7 @@ G4LogicalVolume* DetectorConstruction::ConstructChamber()
   G4double electrode_radius = 0.5 * CLHEP::mm;
   
   G4Tubs* solidCavity = new G4Tubs("Cavity", 0, inner_outer_wall_radius, half_len_z, 0, 360 * CLHEP::deg);
-  logicCavity = new G4LogicalVolume(solidCavity, air, "Cavity");
+  logicCavity = new G4LogicalVolume(solidCavity, this->air, "Cavity");
 
   //  Внутренний электрод
   G4Tubs* solidInnerElectrode = new G4Tubs("Electrode", 0, electrode_radius, half_len_z, 0, 360 * CLHEP::deg);
@@ -127,12 +153,11 @@ G4LogicalVolume* DetectorConstruction::ConstructChamber()
 G4LogicalVolume* DetectorConstruction::ConstructPhantom()
 { 
   // Плита где это всё мерится:
-  G4Material* air = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
   G4double half_x = 150 * CLHEP::mm;
   G4double half_y = 150 * CLHEP::mm;
 
   G4Box* solidPlateDet = new G4Box("PlateIonChamber", half_x, half_y, 10 * CLHEP::mm);
-  G4LogicalVolume* logicPlateDet = new G4LogicalVolume(solidPlateDet, solid_water, "PlaterIonChamber");
+  G4LogicalVolume* logicPlateDet = new G4LogicalVolume(solidPlateDet, this->solid_water, "PlaterIonChamber");
   G4Tubs* solidHole = new G4Tubs("Hole", 0, 10 * CLHEP::mm, half_x, 0, 360 * CLHEP::deg);
   G4LogicalVolume* logicHole = new G4LogicalVolume(solidHole, air, "Hole");
   auto rotation = new G4RotationMatrix();
@@ -150,7 +175,7 @@ G4LogicalVolume* DetectorConstruction::ConstructSolidWaterCube(G4double wide)
   G4double half_x = 150 * CLHEP::mm;
   G4double half_y = 150 * CLHEP::mm;
   G4Box* solidPlate = new G4Box("PlateIonChamber", half_x, half_y, wide / 2 * CLHEP::mm);
-  G4LogicalVolume* logicPlate = new G4LogicalVolume(solidPlate, solid_water, "PlaterIonChamber");
+  G4LogicalVolume* logicPlate = new G4LogicalVolume(solidPlate, this->solid_water, "PlaterIonChamber");
 
   return logicPlate;
 }
@@ -164,7 +189,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 {
   G4cout << "DETECTOR CONSTRUCTION";
   // Get nist material manager
-  this->CreateSolidWaterMaterial(); 
+  this->CreateMaterials(); 
   G4NistManager* nist = G4NistManager::Instance();
 
   // Envelope parameters
@@ -172,7 +197,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   // Задаём мир
   G4double world_sizeXY = 2 * CLHEP::m;
   G4double world_sizeZ = 2 * CLHEP::m;
-  G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
+  G4Material* world_mat = air;
 
   auto solidWorld = new G4Box("World",  0.5 * world_sizeXY, 0.5 * world_sizeXY, 0.5 * world_sizeZ);  
   auto logicWorld = new G4LogicalVolume(solidWorld, world_mat, "World");  

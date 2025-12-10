@@ -62,7 +62,47 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/vis/viewer/set/style w
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 0
-/vis/viewer/refresh
+/run/beamOn 1
+/vis/scene/notifyHandlers scene-0
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
+/run/setCut 0.1 mm
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector

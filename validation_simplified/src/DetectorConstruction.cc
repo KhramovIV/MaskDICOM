@@ -146,11 +146,12 @@ G4LogicalVolume* DetectorConstruction::ConstructPhantom()
 
 G4LogicalVolume* DetectorConstruction::ConstructSolidWaterCube(G4double wide)
 {
+  G4Material* water = G4NistManager::Instance()->FindOrBuildMaterial("G4_WATER");
   // Сами плиты
   G4double half_x = 150 * CLHEP::mm;
   G4double half_y = 150 * CLHEP::mm;
-  G4Box* solidPlate = new G4Box("PlateIonChamber", half_x, half_y, wide / 2 * CLHEP::mm);
-  G4LogicalVolume* logicPlate = new G4LogicalVolume(solidPlate, solid_water, "PlaterIonChamber");
+  G4Box* solidPlate = new G4Box("Plater", half_x, half_y, wide / 2 * CLHEP::mm);
+  G4LogicalVolume* logicPlate = new G4LogicalVolume(solidPlate, solid_water, "Plate");
 
   return logicPlate;
 }
@@ -179,7 +180,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   auto physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, checkOverlaps);
 
   // Строим плиты (плита которая, перед детектором будет как одна просто большая плита, а не как много маленьких)
-  auto logicDetector = this->ConstructSolidWaterCube(200);
+  auto logicDetector = this->ConstructSolidWaterCube(1000);
   new G4PVPlacement(nullptr, G4ThreeVector(), logicDetector, "World", logicWorld, false, 0, true);
   fScoringVolume = logicDetector;
 

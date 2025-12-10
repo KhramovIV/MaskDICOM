@@ -7,24 +7,23 @@
 /run/numberOfThreads 10
 /run/initialize
 /run/printProgress 500000
+/run/setCut 0.1 mm
 #
 /control/verbose 2
 /run/verbose 2
 
 # Форма 
-/gps/source/type Plane
-/gps/shape Square
-/gps/halfx 2.5 cm   # 5 см / 2
-/gps/halfy 2.5 cm   # 5 см / 2               
+#/gps/pos/type Plane
+#/gps/pos/shape Square
+#/gps/pos/halfx 5 mm #5 cm
+#/gps/pos/halfy 5 mm #5 cm
+#/gps/pos/rot1 1 0 0
+#/gps/pos/rot2 0 1 0            
 
 # Задаём частицу
 /gps/particle gamma
 /gps/direction 0 0 -1
-/gps/ang/type beam
 /gps/pos/centre 0 0 90 cm
-/gps/pos/type Volume
-/gps/pos/rot1 1 0 0
-/gps/pos/rot2 0 1 0
                
 # Спектр частицы
 /gps/ene/type Arb
@@ -35,80 +34,168 @@
 
 /geom/z 1
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 1.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 2
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 2.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 3
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 3.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 4
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 4.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 5
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 5.1
+/run/initialize
+/run/beamOn 10
+
+/geom/z 6
+/run/initialize
+/run/beamOn 100000000
+/geom/z 6.1
+/run/initialize
+/run/beamOn 10
+
+/geom/z 7
+/run/initialize
+/run/beamOn 100000000
+/geom/z 7.1
+/run/initialize
+/run/beamOn 10
+
+/geom/z 8
+/run/initialize
+/run/beamOn 100000000
+/geom/z 8.1
+/run/initialize
+/run/beamOn 10
+
+/geom/z 9
+/run/initialize
+/run/beamOn 100000000
+/geom/z 9.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 10
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 10.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 20
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 20.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 30
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 30.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 40
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 40.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 50
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 50.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 60
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 60.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 70
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 70.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 80
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 80.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 90
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 90.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 100
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 100.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 120
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 120.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 140
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 140.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 160
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 160.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 180
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 180.1
+/run/initialize
+/run/beamOn 10
 
 /geom/z 200
 /run/initialize
-/run/beamOn 10000000
+/run/beamOn 100000000
+/geom/z 200.1
+/run/initialize
+/run/beamOn 10
